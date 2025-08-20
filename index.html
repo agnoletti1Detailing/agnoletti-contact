@@ -3,120 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agnoletti Detailing - Contact</title>
+    <title>Agnoletti Detailing - Professional Car Detailing in Livermore, CA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'metallic': '#C0C0C0',
-                        'dark-metallic': '#A8A8A8',
-                        'charcoal': '#2D2D2D'
+                        'brand-blue': '#1E40AF',
+                        'brand-blue-light': '#3B82F6',
+                        'brand-blue-dark': '#1E3A8A',
+                        'accent-silver': '#E5E7EB',
+                        'accent-gray': '#6B7280',
+                        'charcoal': '#111827'
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-black text-white min-h-screen">
+<body class="bg-gradient-to-b from-black via-gray-900 to-gray-800 text-white min-h-screen">
     <!-- Header Section -->
-    <header class="text-center py-8 px-4">
-        <!-- Logo - Replace this section with your logo -->
-        <div class="mb-6">
-            <!-- TO ADD YOUR LOGO: Replace this entire SVG with:
-                 <img src="your-logo-url.png" alt="Agnoletti Detailing Logo" class="w-20 h-20 mx-auto object-contain">
-                 OR paste your SVG logo code here -->
-            <svg class="w-20 h-20 mx-auto text-metallic" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
-            </svg>
+    <header class="text-center py-12 px-4 bg-gradient-to-b from-gray-800/50 to-transparent">
+        <!-- Logo Container -->
+        <div class="mb-8">
+            <img src="https://agnoletti1detailing.github.io/logo.png/" 
+                 alt="Agnoletti Detailing Logo" 
+                 class="w-80 h-80 mx-auto object-contain drop-shadow-2xl"
+                 style="mix-blend-mode: screen; filter: brightness(1.1) contrast(1.1);"
+                 onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='flex';">
+            <!-- Fallback logo in case image doesn't load -->
+            <div id="fallback-logo" class="w-80 h-80 mx-auto bg-gradient-to-br from-brand-blue-light to-brand-blue-dark rounded-full flex items-center justify-center drop-shadow-2xl border-4 border-white/20" style="display: none;">
+                <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                </svg>
+            </div>
         </div>
         
-        <!-- Business Name -->
-        <h1 class="text-4xl md:text-5xl font-bold mb-2 text-metallic">
-            Agnoletti Detailing
-        </h1>
-        
         <!-- Tagline -->
-        <p class="text-lg md:text-xl text-gray-300 italic">
-            we make your car new again
+        <p class="text-xl md:text-2xl text-gray-300 italic mb-6 font-light -mt-4">
+            We make your car new again
         </p>
+        
+        <!-- Professional Badges -->
+        <div class="flex justify-center flex-wrap gap-4 text-sm text-gray-400">
+            <div class="flex items-center bg-gray-800/50 px-3 py-1 rounded-full">
+                <svg class="w-4 h-4 mr-2 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Professional Service
+            </div>
+            <div class="flex items-center bg-gray-800/50 px-3 py-1 rounded-full">
+                <svg class="w-4 h-4 mr-2 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                5-Star Service
+            </div>
+            <div class="flex items-center bg-gray-800/50 px-3 py-1 rounded-full">
+                <svg class="w-4 h-4 mr-2 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                </svg>
+                Mobile Service
+            </div>
+        </div>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-2xl mx-auto px-4 pb-8">
+    <main class="max-w-4xl mx-auto px-4 pb-8">
         <!-- About Section -->
-        <section class="bg-charcoal rounded-lg p-6 mb-8 border border-metallic/20">
-            <p class="text-gray-200 leading-relaxed text-center">
-                We specialize in professional car detailing in Livermore, CA. From deep interior cleaning to paint enhancement, we restore and protect your vehicle so it looks brand new. Mobile or drop-off options available.
-            </p>
+        <section class="bg-gradient-to-r from-charcoal/80 to-gray-800/80 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-metallic/20 shadow-2xl">
+            <div class="text-center mb-6">
+                <h2 class="text-2xl font-bold text-brand-blue-light mb-4">Premium Car Detailing Services</h2>
+                <p class="text-gray-200 leading-relaxed text-lg">
+                    We specialize in professional car detailing in Livermore, CA and surrounding areas. From deep interior cleaning to paint enhancement and ceramic coatings, we restore and protect your vehicle so it looks brand new.
+                </p>
+            </div>
+            
+            <!-- Service Highlights -->
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-white mb-2">Interior Deep Clean</h3>
+                    <p class="text-gray-300 text-sm">Complete interior detailing including upholstery, carpets, and dashboard</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-white mb-2">Premium Exterior Detailing</h3>
+                    <p class="text-gray-300 text-sm">Expert hand wash, clay bar treatment, and protective wax application</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-white mb-2">Flexible Scheduling</h3>
+                    <p class="text-gray-300 text-sm">Mobile service or drop-off options to fit your schedule</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Service Area -->
+        <section class="bg-gradient-to-r from-gray-800/80 to-charcoal/80 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-metallic/20 shadow-2xl">
+            <h2 class="text-2xl font-bold text-brand-blue-light mb-6 text-center">Service Area</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4 flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                        </svg>
+                        Primary Location
+                    </h3>
+                    <p class="text-gray-200 mb-2">📍 Livermore, California</p>
+                    <p class="text-gray-300 text-sm mb-4">Serving the Tri-Valley area with premium mobile detailing services</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-white mb-4">We Also Serve:</h3>
+                    <div class="grid grid-cols-2 gap-2 text-gray-300 text-sm">
+                        <div>• Dublin</div>
+                        <div>• Pleasanton</div>
+                        <div>• San Ramon</div>
+                        <div>• Danville</div>
+                        <div>• Castro Valley</div>
+                        <div>• Hayward</div>
+                        <div>• Fremont</div>
+                        <div>• Tracy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 p-4 bg-blue-900/30 rounded-lg border border-blue-500/30">
+                <p class="text-blue-200 text-sm text-center">
+                    <svg class="w-4 h-4 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                    </svg>
+                    Mobile service available within 25 miles of Livermore • Drop-off location available
+                </p>
+            </div>
         </section>
 
         <!-- Contact Buttons -->
-        <section class="space-y-4">
-            <h2 class="text-2xl font-semibold text-metallic mb-6 text-center">
-                Get Your Quote Today
+        <section class="space-y-6">
+            <h2 class="text-3xl font-bold text-center mb-8">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue-light to-blue-400">
+                    Get Your Free Quote Today
+                </span>
             </h2>
             
             <!-- Instagram Button -->
             <a href="https://www.instagram.com/agnoletti_detailing?igsh=bWE4cXliMDhlY2Zi&utm_source=qr" 
                target="_blank" 
-               class="block w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-4 px-6 rounded-lg text-center transition-all duration-200 transform hover:scale-105">
-                <svg class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-                DM us on Instagram
+               class="block w-full bg-gradient-to-r from-purple-600 via-pink-600 to-purple-700 hover:from-purple-700 hover:via-pink-700 hover:to-purple-800 text-white font-bold py-5 px-8 rounded-2xl text-center transition-all duration-300 transform hover:scale-105 shadow-2xl border border-purple-400/30">
+                <div class="flex items-center justify-center">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    <span class="text-lg">DM us on Instagram</span>
+                </div>
+                <p class="text-purple-200 text-sm mt-1">Quick response • See our work • Book instantly</p>
             </a>
             
             <!-- Text Message Button -->
             <a href="sms:+14088290653?body=Hi%20I'm%20interested%20in%20a%20free%20quote" 
-               class="block w-full bg-metallic hover:bg-dark-metallic text-black font-semibold py-4 px-6 rounded-lg text-center transition-all duration-200 transform hover:scale-105">
-                <svg class="w-5 h-5 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
-                </svg>
-                Text us for a FREE quote
+               class="block w-full bg-gradient-to-r from-brand-blue via-brand-blue-light to-brand-blue hover:from-brand-blue-dark hover:via-brand-blue hover:to-brand-blue-dark text-white font-bold py-5 px-8 rounded-2xl text-center transition-all duration-300 transform hover:scale-105 shadow-2xl border border-blue-400/30">
+                <div class="flex items-center justify-center">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+                    </svg>
+                    <span class="text-lg">Text us for a FREE quote</span>
+                </div>
+                <p class="text-blue-100 text-sm mt-1">📱 (408) 829-0653 • Fast response guaranteed</p>
             </a>
         </section>
 
         <!-- Service Selection -->
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold text-metallic mb-4 text-center">
-                Want to be more specific?
-            </h2>
-            <p class="text-gray-300 text-center mb-4 text-sm">
-                Select a service below to send a more detailed message
-            </p>
-            <div class="grid grid-cols-2 gap-3">
-                <button onclick="selectService('Exterior Wash')" 
-                        class="service-btn bg-gray-800 hover:bg-metallic hover:text-black border border-metallic/30 rounded-lg py-3 px-4 text-sm font-medium transition-all duration-200">
-                    Exterior Wash
-                </button>
-                <button onclick="selectService('Full Detail')" 
-                        class="service-btn bg-gray-800 hover:bg-metallic hover:text-black border border-metallic/30 rounded-lg py-3 px-4 text-sm font-medium transition-all duration-200">
-                    Full Detail
-                </button>
-                <button onclick="selectService('Pet Hair Removal')" 
-                        class="service-btn bg-gray-800 hover:bg-metallic hover:text-black border border-metallic/30 rounded-lg py-3 px-4 text-sm font-medium transition-all duration-200">
-                    Pet Hair Removal
-                </button>
-                <button onclick="selectService('Ceramic Spray Coating')" 
-                        class="service-btn bg-gray-800 hover:bg-metallic hover:text-black border border-metallic/30 rounded-lg py-3 px-4 text-sm font-medium transition-all duration-200">
-                    Ceramic Spray Coating
-                </button>
-            </div>
-            <div id="selectedService" class="mt-4 text-center text-metallic font-medium hidden">
-                Selected: <span id="serviceText"></span>
+        <section class="mt-12 mb-8">
+            <div class="bg-gradient-to-r from-charcoal/60 to-gray-800/60 backdrop-blur-sm rounded-2xl p-8 border border-metallic/20">
+                <h2 class="text-2xl font-bold text-brand-blue-light mb-4 text-center">
+                    Want to be more specific?
+                </h2>
+                <p class="text-gray-300 text-center mb-6">
+                    Select a service below to send a detailed message about your specific needs
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <button onclick="selectService('Exterior Wash & Wax')" 
+                            class="service-btn bg-gray-700/50 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-700 border border-metallic/30 rounded-xl py-4 px-6 text-left font-medium transition-all duration-300 transform hover:scale-105">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center mr-3">
+                                <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"/>
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Exterior Wash & Wax</div>
+                                <div class="text-sm text-gray-400">Complete exterior cleaning and protection</div>
+                            </div>
+                        </div>
+                    </button>
+                    <button onclick="selectService('Full Detail Package')" 
+                            class="service-btn bg-gray-700/50 hover:bg-gradient-to-r hover:from-green-600 hover:to-green-700 border border-metallic/30 rounded-xl py-4 px-6 text-left font-medium transition-all duration-300 transform hover:scale-105">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center mr-3">
+                                <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Full Detail Package</div>
+                                <div class="text-sm text-gray-400">Interior + exterior complete service</div>
+                            </div>
+                        </div>
+                    </button>
+                    <button onclick="selectService('Pet Hair Removal')" 
+                            class="service-btn bg-gray-700/50 hover:bg-gradient-to-r hover:from-orange-600 hover:to-orange-700 border border-metallic/30 rounded-xl py-4 px-6 text-left font-medium transition-all duration-300 transform hover:scale-105">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center mr-3">
+                                <svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Pet Hair Removal</div>
+                                <div class="text-sm text-gray-400">Specialized pet hair extraction service</div>
+                            </div>
+                        </div>
+                    </button>
+                    <button onclick="selectService('Premium Interior Restoration')" 
+                            class="service-btn bg-gray-700/50 hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-700 border border-metallic/30 rounded-xl py-4 px-6 text-left font-medium transition-all duration-300 transform hover:scale-105">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mr-3">
+                                <svg class="w-5 h-5 text-purple-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Premium Interior Restoration</div>
+                                <div class="text-sm text-gray-400">Deep cleaning and fabric protection</div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <div id="selectedService" class="mt-6 p-4 bg-brand-blue/10 rounded-lg border border-brand-blue/30 hidden">
+                    <p class="text-brand-blue-light font-medium text-center">
+                        ✓ Selected: <span id="serviceText"></span>
+                    </p>
+                    <p class="text-gray-300 text-sm text-center mt-1">
+                        Tap the text button above to send your specific service request!
+                    </p>
+                </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="text-center mt-12 pt-8 border-t border-metallic/20">
-            <p class="text-gray-400 text-sm">
-                Serving Livermore, CA and surrounding areas
+        <footer class="text-center mt-16 pt-8 border-t border-metallic/20">
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-brand-blue-light mb-2">Business Hours</h3>
+                <div class="text-gray-300 text-sm space-y-1">
+                    <div>Monday - Friday: 8:00 AM - 6:00 PM</div>
+                    <div>Saturday: 8:00 AM - 5:00 PM</div>
+                    <div>Sunday: 10:00 AM - 4:00 PM</div>
+                </div>
+            </div>
+            <p class="text-gray-400 text-sm mb-2">
+                📍 Serving Livermore, CA and the entire Tri-Valley area
             </p>
-            <p class="text-gray-500 text-xs mt-2">
-                Mobile & Drop-off Services Available
+            <p class="text-gray-500 text-xs">
+                Mobile Service Available • Drop-off Location
             </p>
+            <div class="mt-4 text-xs text-gray-600">
+                © 2024 Agnoletti Detailing. Professional car detailing services.
+            </div>
         </footer>
     </main>
 
@@ -128,21 +292,41 @@
             
             // Update visual feedback
             document.querySelectorAll('.service-btn').forEach(btn => {
-                btn.classList.remove('bg-metallic', 'text-black');
-                btn.classList.add('bg-gray-800', 'text-white');
+                btn.classList.remove('bg-gradient-to-r', 'from-blue-600', 'to-blue-700', 'from-green-600', 'to-green-700', 'from-orange-600', 'to-orange-700', 'from-purple-600', 'to-purple-700');
+                btn.classList.add('bg-gray-700/50');
             });
             
-            event.target.classList.remove('bg-gray-800', 'text-white');
-            event.target.classList.add('bg-metallic', 'text-black');
+            // Add selected styling based on service
+            if (serviceName.includes('Exterior')) {
+                event.target.classList.add('bg-gradient-to-r', 'from-blue-600', 'to-blue-700');
+            } else if (serviceName.includes('Full')) {
+                event.target.classList.add('bg-gradient-to-r', 'from-green-600', 'to-green-700');
+            } else if (serviceName.includes('Pet')) {
+                event.target.classList.add('bg-gradient-to-r', 'from-orange-600', 'to-orange-700');
+            } else if (serviceName.includes('Premium Interior')) {
+                event.target.classList.add('bg-gradient-to-r', 'from-purple-600', 'to-purple-700');
+            }
+            
+            event.target.classList.remove('bg-gray-700/50');
             
             // Show selected service
             document.getElementById('selectedService').classList.remove('hidden');
             document.getElementById('serviceText').textContent = serviceName;
             
             // Open text message with specific service
-            const message = `Hi I'm interested in a free quote for ${serviceName} service`;
+            const message = `Hi I'm interested in a free quote for ${serviceName} service. I'm located in the Livermore area.`;
             window.location.href = `sms:+14088290653?body=${encodeURIComponent(message)}`;
         }
+
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96c27bd8d61822ba',t:'MTc1NDY5MjQ5NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'972579abc151f947',t:'MTc1NTczMDQ5NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
